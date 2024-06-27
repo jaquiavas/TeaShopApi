@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TeaStoreApi.Interfaces;
 using TeaStoreApi.Models;
 
@@ -8,6 +9,7 @@ namespace TeaStoreApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
         private ICategoryRepository _categoryRepository;
@@ -27,6 +29,7 @@ namespace TeaStoreApi.Controllers
             return NotFound();
         }
 
+        [Authorize(Roles = "Admin")]
         // POST api/<CategoriesController>
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] Category category)

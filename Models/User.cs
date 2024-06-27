@@ -8,5 +8,6 @@
         public string Password { get; set; }
         ICollection<ShoppingCartItem> ShoppingCartItems { get; set; }
         ICollection<Order> Orders { get; set; }
+        public string Role { get; set; } = "Users";
     }
 }

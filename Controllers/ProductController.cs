@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TeaStoreApi.Interfaces;
 using TeaStoreApi.Models;
 
@@ -8,6 +9,7 @@ namespace TeaStoreApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private IProductRepository _productRepository;
@@ -43,6 +45,7 @@ namespace TeaStoreApi.Controllers
         }
 
         // POST api/<ProductController>
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] Product product)
         {
@@ -55,6 +58,7 @@ namespace TeaStoreApi.Controllers
         }
 
         // PUT api/<ProductController>/5
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] Product product)
         {
@@ -67,6 +71,7 @@ namespace TeaStoreApi.Controllers
         }
 
         // DELETE api/<ProductController>/5
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

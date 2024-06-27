@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeaStoreApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de75e373bf3757eb1e8b73296abc148edd71a5cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cf7450387120d7f9466145a354b86260aca9e87")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeaStoreApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeaStoreApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
