@@ -134,3 +134,5 @@ C:\Users\xschroeder\source\repos\TeaStoreApi\TeaStoreApi\obj\Debug\net8.0\refint
 C:\Users\xschroeder\source\repos\TeaStoreApi\TeaStoreApi\obj\Debug\net8.0\TeaStoreApi.pdb
 C:\Users\xschroeder\source\repos\TeaStoreApi\TeaStoreApi\obj\Debug\net8.0\TeaStoreApi.genruntimeconfig.cache
 C:\Users\xschroeder\source\repos\TeaStoreApi\TeaStoreApi\obj\Debug\net8.0\ref\TeaStoreApi.dll
+C:\Users\xschroeder\source\repos\TeaStoreApi\TeaStoreApi\bin\Debug\net8.0\TeaStoreApi.staticwebassets.runtime.json
+C:\Users\xschroeder\source\repos\TeaStoreApi\TeaStoreApi\obj\Debug\net8.0\TeaStoreApi.sourcelink.json
